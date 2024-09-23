@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <title>Manajemen Jadwal Kapal</title>
+  </head>
+  <body>
+    <header>
+      <h1>Manajemen Jadwal Kapal</h1>
+    </header>
+    <div class="container">
+      <form action="/add_schedule" method="POST">
+        <label for="origin">Asal:</label>
+        <input type="text" id="origin" name="origin" required />
+
+        <label for="destination">Tujuan:</label>
+        <input type="text" id="destination" name="destination" required />
+
+        <label for="departure_date">Tanggal Pemberangkatan:</label>
+        <input type="date" id="departure_date" name="departure_date" required />
+
+        <label for="class">Kelas Kapal:</label>
+        <input type="text" id="class" name="class" required />
+
+        <label for="ticket_price">Harga Tiket:</label>
+        <input type="number" id="ticket_price" name="ticket_price" required />
+
+        <input type="submit" value="Tambah Jadwal" />
+      </form>
+
+      <h2>Daftar Jadwal Kapal</h2>  
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Asal</th>
+            <th>Tujuan</th>
+            <th>Tanggal</th>
+            <th>Kelas</th>
+            <th>Harga</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for schedule in schedules %}
+          <tr>
+            <td>{{ schedule.id }}</td>
+            <td>{{ schedule.origin }}</td>
+            <td>{{ schedule.destination }}</td>
+            <td>{{ schedule.departure_date }}</td>
+            <td>{{ schedule.ship_class }}</td>
+            <td>{{ schedule.ticket_price }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
