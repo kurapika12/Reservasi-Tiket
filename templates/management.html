@@ -32,32 +32,6 @@
 
         <input type="submit" value="Tambah Jadwal" />
       </form>
-
-      <h2>Daftar Jadwal Kapal</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>ID</th>
-            <th>Asal</th>
-            <th>Tujuan</th>
-            <th>Tanggal</th>
-            <th>Kelas</th>
-            <th>Harga</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for schedule in schedules %}
-          <tr>
-            <td>{{ schedule.id }}</td>
-            <td>{{ schedule.origin }}</td>
-            <td>{{ schedule.destination }}</td>
-            <td>{{ schedule.departure_date }}</td>
-            <td>{{ schedule.ship_class }}</td>
-            <td>{{ schedule.ticket_price }}</td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
     </div>
   </body>
 </html>
