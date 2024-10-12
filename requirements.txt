@@ -1,0 +1,7 @@
+USER : 
+username : alam
+password : saya123
+
+ADMIN :
+username : admin
+password : jualtiket
