@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pembelian Tiket - Website Penjualan Tiket</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="../images/logo.png" alt="Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="reservasi.html">Reservasi Tiket</a></li>
+          <li><a href="../php/jadwal.php">Jadwal Kapal</a></li>
+          <li><a href="../php/logout.php">Logout</a></li>
+
+          <!-- Tambahkan menu lainnya sesuai kebutuhan -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="purchase-section">
+        <h2>Pembelian Tiket</h2>
+        <form
+          action="http://localhost/web-tiket/php/buy_ticket.php"
+          method="post"
+        >
+          <label for="nama">Nama:</label>
+          <input type="text" id="nama" name="nama" required />
+
+          <label for="asal">Asal:</label>
+          <input type="text" id="asal" name="asal" required />
+
+          <label for="tujuan">Tujuan:</label>
+          <input type="text" id="tujuan" name="tujuan" required />
+
+          <label for="tanggal">Tanggal:</label>
+          <input type="date" id="tanggal" name="tanggal" required />
+
+          <label for="kelas">Kelas:</label>
+          <input type="text" id="kelas" name="kelas" required />
+
+          <label for="nama_kapal">Nama Kapal:</label>
+          <input type="text" id="nama_kapal" name="nama_kapal" required />
+
+          <label for="jumlah_tiket">Jumlah Tiket:</label>
+          <input type="number" id="jumlah_tiket" name="jumlah_tiket" required />
+
+          <label for="metode_pembayaran">Metode Pembayaran:</label>
+          <select id="metode_pembayaran" name="metode_pembayaran" required>
+            <option value="Online">Online</option>
+            <option value="Offline">Offline</option>
+          </select>
+
+          <button type="submit">Beli Tiket</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Website Penjualan Tiket. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
