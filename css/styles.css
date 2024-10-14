@@ -3,272 +3,274 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-}
-
-header {
+  }
+  
+  header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-}
-
-header .logo {
+  }
+  
+  header .logo {
     display: inline-block;
     margin-left: 20px;
-}
-
-header .logo img {
+  }
+  
+  header .logo img {
     height: 50px;
-}
-
-nav {
+  }
+  
+  nav {
     display: inline-block;
     float: none;
     margin-right: 20px;
-}
-
-nav ul {
+  }
+  
+  nav ul {
     list-style: none;
-}
-
-nav ul li {
+  }
+  
+  nav ul li {
     display: inline-block;
     margin-left: 20px;
-}
-
-nav ul li a {
+  }
+  
+  nav ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-}
-
-main {
+  }
+  
+  main {
     padding: 20px;
-}
-
-footer {
-    background-color: #333;
+  }
+  
+  footer {
+    background-color: #007bff;
     color: #fff;
     text-align: center;
-    padding: 10px 0;
-    position: fixed;
+    padding: 10px;
+    position: relative;
     width: 100%;
     bottom: 0;
-}
-
-/* Form Styles */
-form {
+    margin-top: 20px;
+  }
+  
+  /* Form Styles */
+  form {
     background-color: #fff;
     padding: 20px;
     border-radius: 5px;
-}
-
-form h2 {
+  }
+  
+  form h2 {
     margin-bottom: 15px;
     color: #333;
-}
-
-form label {
+  }
+  
+  form label {
     display: block;
     margin-bottom: 5px;
     color: #555;
-}
-
-form input[type="text"],
-form input[type="password"],
-form input[type="date"],
-form select,
-form input[type="number"] {
+  }
+  
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="date"],
+  form select,
+  form input[type="number"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 3px;
-}
-
-form button {
+  }
+  
+  form button {
     background-color: #28a745;
     color: #fff;
     padding: 10px 15px;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-}
-
-form button:hover {
+  }
+  
+  form button:hover {
     background-color: #218838;
-}
-
-/* Reservation Page Styles */
-.reservation-section .form-group {
+  }
+  
+  /* Reservation Page Styles */
+  .reservation-section .form-group {
     margin-bottom: 15px;
-}
-
-.ticket-quantity {
+  }
+  
+  .ticket-quantity {
     display: flex;
     justify-content: space-between;
-}
-
-.ticket-box {
+  }
+  
+  .ticket-box {
     display: flex;
     align-items: center;
-}
-
-.ticket-box img {
+  }
+  
+  .ticket-box img {
     width: 30px;
     margin-right: 10px;
-}
-
-.ticket-box input {
+  }
+  
+  .ticket-box input {
     width: 60px;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
     nav {
-        float: none;
-        text-align: center;
+      float: none;
+      text-align: center;
     }
-
+  
     nav ul li {
-        display: block;
-        margin: 10px 0;
+      display: block;
+      margin: 10px 0;
     }
-
+  
     .ticket-quantity {
-        flex-direction: column;
+      flex-direction: column;
     }
-
+  
     .ticket-box {
-        margin-bottom: 10px;
+      margin-bottom: 10px;
     }
-}
-
-* {
+  }
+  
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-}
-
-header {
+  }
+  
+  header {
     background-color: #333;
     color: #fff;
     padding: 10px 0;
-}
-
-header nav ul {
+  }
+  
+  header nav ul {
     list-style: none;
     text-align: center;
-}
-
-header nav ul li {
+  }
+  
+  header nav ul li {
     display: inline;
     margin: 0 15px;
-}
-
-header nav ul li a {
+  }
+  
+  header nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
-}
-
-header nav ul li a:hover {
+  }
+  
+  header nav ul li a:hover {
     text-decoration: underline;
-}
-
-section {
+  }
+  
+  section {
     padding: 30px;
     max-width: 800px;
     margin: 100px auto;
     background-color: #fff;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-h1 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
     margin-bottom: 20px;
     color: #333;
-}
-
-p {
+  }
+  
+  p {
     margin-bottom: 15px;
     line-height: 1.8;
-}
-
-body {
+  }
+  
+  body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-}
-
-header {
+  }
+  
+  header {
     background-color: #007bff;
     color: white;
     padding: 15px 20px;
     text-align: center;
-}
-
-.logo img {
+  }
+  
+  .logo img {
     width: 150px; /* Sesuaikan ukuran logo */
-}
-
-main {
+  }
+  
+  main {
     padding: 20px;
-}
-
-.schedule-section {
+  }
+  
+  .schedule-section {
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 0 auto;
     max-width: 800px; /* Maksimal lebar tabel */
-}
-
-h2 {
+  }
+  
+  h2 {
     text-align: center;
     color: #333;
-}
-
-table {
+  }
+  
+  table {
     width: 100%;
     border-collapse: collapse; /* Menghilangkan jarak antar border */
     margin-top: 20px;
-}
-
-table th, table td {
+  }
+  
+  table th,
+  table td {
     padding: 10px;
     text-align: left;
     border: 1px solid #ddd;
-}
-
-table th {
+  }
+  
+  table th {
     background-color: #007bff;
     color: white;
-}
-
-table tr:nth-child(even) {
+  }
+  
+  table tr:nth-child(even) {
     background-color: #f2f2f2; /* Warna latar belakang untuk baris genap */
-}
-
-table tr:hover {
+  }
+  
+  table tr:hover {
     background-color: #f1f1f1; /* Warna latar belakang saat mouse hover */
-}
-
-footer {
+  }
+  
+  footer {
     background-color: #007bff;
     color: white;
     text-align: center;
@@ -277,105 +279,6 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 20px;
-}
-
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    color: #333;
-}
-
-header {
-    background-color: #0044cc;
-    padding: 20px;
-    text-align: center;
-}
-
-header .logo img {
-    width: 150px;
-    height: auto;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-}
-
-.register-section {
-    background-color: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 300px;
-}
-
-.register-section h2 {
-    text-align: center;
-    color: #0044cc;
-    margin-bottom: 20px;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: #333;
-}
-
-input[type="text"],
-input[type="password"] {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-button {
-    padding: 10px;
-    background-color: #0044cc;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-
-button:hover {
-    background-color: #0033a0;
-}
-
-p {
-    text-align: center;
-    margin-top: 15px;
-}
-
-a {
-    color: #0044cc;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 15px;
-    background-color: #0044cc;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 14px;
-}
+  }
+  
+  
