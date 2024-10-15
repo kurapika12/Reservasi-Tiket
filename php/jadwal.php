@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daftar Jadwal Kapal - Website Penjualan Tiket</title>
-    <link rel="stylesheet" href="../css/styles.css"> <!-- Pastikan jalur CSS sesuai -->
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     <header>
@@ -69,9 +69,5 @@
             ?>
         </section>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Website Penjualan Tiket. All rights reserved.</p>
-    </footer>
 </body>
 </html>

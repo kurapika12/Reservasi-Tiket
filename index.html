@@ -11,16 +11,25 @@
       <div class="logo">
         <img src="images/logo.png" alt="Logo" />
       </div>
+      <nav>
+        <ul>
+          <li><a>RESERVASI TIKET KAPAL JETLINER</a></li>
+        </ul>
+      </nav>
     </header>
 
     <main>
       <section class="login-section">
         <h2>Login</h2>
         <form action="php/login.php" method="POST">
-          <label for="username">Username :</label>
+          <label for="username">
+            <img src="images/username-icon.png" alt="Username Icon" class="input-icon" />
+            Username :</label>
           <input type="text" id="username" name="username" required />
 
-          <label for="password">Password :</label>
+          <label for="password">
+            <img src="images/password-icon.png" alt="Password Icon" class="input-icon" />
+            Password :</label>
           <input type="password" id="password" name="password" required />
 
           <button type="submit">Masuk</button>
