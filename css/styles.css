@@ -281,4 +281,10 @@
     margin-top: 20px;
   }
   
-  
+  body {
+    background-image: url("/images/kapal.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
