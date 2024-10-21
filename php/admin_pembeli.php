@@ -34,6 +34,9 @@ $pembeli_result = $conn->query($pembeli_sql);
 </head>
 <body>
     <header>
+    <div class="logo">
+        <img src="../images/boat.png" alt="Logo" />
+    </div>
     <nav>
         <ul>
             <li><a href="../pages/admin.html">Kelola Jadwal</a></li>
