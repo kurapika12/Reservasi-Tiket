@@ -291,7 +291,7 @@ footer {
 }
 
 body {
-  background-image: url("../images/kapal.jpg");
+  background-image: url("../images/kapal.jpg"); /* Menambahkan latar belakang*/ 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
