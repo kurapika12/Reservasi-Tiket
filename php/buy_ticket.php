@@ -22,6 +22,7 @@ $tanggal = $_POST['tanggal'] ?? '';
 $kelas = $_POST['kelas'] ?? '';
 $nama_kapal = $_POST['nama_kapal'] ?? '';
 $jumlah_tiket = $_POST['jumlah_tiket'] ?? 0;
+$nama_pelabuhan = $_POST['nama_pelabuhan'] ?? 'Bungkutoko';
 $metode_pembayaran = $_POST['metode_pembayaran'] ?? '';
 $nama = $_POST['nama'] ?? 'Pengunjung'; // Nama pembeli
 
@@ -49,12 +50,15 @@ if ($result->num_rows > 0) {
 
 
         // Buat data untuk QR code (misalnya, informasi tiket)
-        $qrData = "ID Jadwal : $id_jadwal\nNama Kapal : $nama_kapal\nNama : $nama\nAsal : $asal\nTujuan : $tujuan\nKelas Kapal : $kelas\nMetode Pembayaram : $metode_pembayaran\nJumlah Tiket : $jumlah_tiket\nTotal Harga : Rp " . number_format($total_harga, 2);
-        $qrCode = QrCode::create($qrData)
-            ->setSize(300)
-            ->setMargin(10);
-        $writer = new PngWriter();
-        $result = $writer->write($qrCode);
+        $qrData = "ID Jadwal : $id_jadwal\nNama Kapal : $nama_kapal\nNama : $nama\nAsal : $asal\nTujuan : $tujuan\nKelas Kapal : $kelas\nNama Pelabuhan : $nama_pelabuhan\nMetode Pembayaran : $metode_pembayaran\nJumlah Tiket : $jumlah_tiket\nTotal Harga : Rp " . number_format($total_harga, 2);
+        
+$qrCode = QrCode::create($qrData)
+    ->setSize(300)
+    ->setMargin(10);
+
+$writer = new PngWriter();
+$result = $writer->write($qrCode);
+
 
         // Simpan QR Code sebagai file PNG
         $fileName = "../qrcodes/ticket_" . time() . ".png"; // Sesuaikan direktori sesuai kebutuhan
