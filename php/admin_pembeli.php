@@ -35,7 +35,7 @@ $pembeli_result = $conn->query($pembeli_sql);
 <body>
     <header>
     <div class="logo">
-        <img src="../images/boat.png" alt="Logo" />
+        <img src="../images/foto_alam.JPG" alt="Logo" />
     </div>
     <nav>
         <ul>
