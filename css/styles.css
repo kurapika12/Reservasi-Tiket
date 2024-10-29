@@ -199,7 +199,12 @@ section {
 }
 
 .login-section {
-  background-color: rgba(255,255,255,0.8); /* Warna latar belakang putih dengan transparansi */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Warna latar belakang putih dengan transparansi */
   border-radius: 8px; /* Sudut yang melengkung */
   padding: 30px; /* Ruang dalam */
   max-width: 800px; /* Lebar maksimum */
@@ -291,7 +296,7 @@ footer {
 }
 
 body {
-  background-image: url("../images/foto_alam.JPG"); /* Menambahkan latar belakang*/ 
+  background-image: url("../images/kapal.JPG"); /* Menambahkan latar belakang*/
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -333,4 +338,3 @@ header {
   height: 15px; /* Ukuran ikon */
   margin-right: 1px; /* Jarak antara ikon dan label */
 }
-

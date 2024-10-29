@@ -9,7 +9,7 @@
   <body>
     <header>
       <div class="logo">
-        <img src="images/foto_alam.JPG" alt="Logo" />
+        <img src="images/boat.png" alt="Logo" />
       </div>
       <nav>
         <ul>
@@ -23,19 +23,45 @@
         <h2>Login</h2>
         <form action="php/login.php" method="POST">
           <label for="username">
-            <img src="images/username-icon.png" alt="Username Icon" class="input-icon" />
-            Username :</label>
+            <img
+              src="images/username-icon.png"
+              alt="Username Icon"
+              class="input-icon"
+            />
+            Username :</label
+          >
           <input type="text" id="username" name="username" required />
 
           <label for="password">
-            <img src="images/password-icon.png" alt="Password Icon" class="input-icon" />
-            Password :</label>
-          <input type="password" id="password" name="password" required />
-
+            <img
+              src="images/password-icon.png"
+              alt="Password Icon"
+              class="input-icon"
+            />
+            Password :</label
+          >
+          <input id="password" type="password" name="password" required />
+          <label for="show_password">
+            <input id="show_password" type="checkbox"/>
+            Tampilkan Password
+          </label>
           <button type="submit">Masuk</button>
         </form>
         <p>Belum punya akun? <a href="login.html">Daftar di sini</a></p>
       </section>
     </main>
+    <script>
+      const inputPassword = document.getElementById("password");
+      const showPassword = document.getElementById("show_password");
+
+      showPassword.addEventListener("input", (e) => {
+        if(e.target.checked) {
+          inputPassword.setAttribute("type", "text");
+        }
+        else {
+          inputPassword.setAttribute("type", "password");
+        }; 
+      })
+    </script>
   </body>
 </html>

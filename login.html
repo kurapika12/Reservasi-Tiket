@@ -22,6 +22,10 @@
 
           <label for="password">Password:</label>
           <input type="password" id="password" name="password" required />
+          <label for="show_password">
+            <input id="show_password" type="checkbox" />
+            Tampilkan Password
+          </label>
 
           <label for="confirm_password">Konfirmasi Password:</label>
           <input
@@ -30,11 +34,39 @@
             name="confirm_password"
             required
           />
+          <label for="show_confirm_password">
+            <input id="show_confirm_password" type="checkbox" />
+            Tampilkan Konfirmasi Password
+          </label>
 
           <button type="submit">Daftar</button>
         </form>
         <p>Sudah punya akun? <a href="index.html">Login di sini</a></p>
       </section>
     </main>
+    <script>
+      const inputPassword = document.getElementById("password");
+      const showPassword = document.getElementById("show_password");
+
+      showPassword.addEventListener("input", (e) => {
+        if (e.target.checked) {
+          inputPassword.setAttribute("type", "text");
+        } else {
+          inputPassword.setAttribute("type", "password");
+        }
+      });
+    </script>
+    <script>
+      const inputConfirmPassword = document.getElementById("confirm_password");
+      const showConfirmPassword = document.getElementById("show_confirm_password");
+
+      showConfirmPassword.addEventListener("input", (c) => {
+        if (c.target.checked) {
+          inputConfirmPassword.setAttribute("type", "text");
+        } else {
+          inputConfirmPassword.setAttribute("type", "password");
+        }
+      });
+    </script>
   </body>
 </html>
