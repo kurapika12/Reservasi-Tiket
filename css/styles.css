@@ -334,7 +334,7 @@ header {
 }
 
 .input-icon {
-  width: 10px; /* Ukuran ikon */
+  width: 15px; /* Ukuran ikon */
   height: 15px; /* Ukuran ikon */
   margin-right: 1px; /* Jarak antara ikon dan label */
 }
