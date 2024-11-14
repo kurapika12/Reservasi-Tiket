@@ -29,7 +29,7 @@ $jadwal_result = $conn->query($jadwal_sql);
 <body>
     <header>
     <div class="logo">
-        <img src="../images/foto_alam.JPG" alt="Logo" />
+        <img src="../images/boat.png" alt="Logo" />
     </div>
     <nav>
         <ul>
